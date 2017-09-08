@@ -11,10 +11,10 @@ tagline:             '天行健，君子以自强不息；地势坤，君子以�
 description:         'Hello World  代码之路，路漫漫其修远兮，吾将上下而求索'
 url:                 http://lanyon.getpoole.com
 baseurl:             ''
-paginate:            5
+paginate:            8
 
 # About/contact
-author:
+author:              	
   name:              HycJack
   url:               https://hycjack.github.io/
   email:             772403255@qq.com
