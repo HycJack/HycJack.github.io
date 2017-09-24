@@ -46,8 +46,7 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  color: #313131;
+  font-weight: 600;
   letter-spacing: -.025rem;
 }
 
@@ -319,6 +318,14 @@ a.sidebar-nav-item:focus {
 .post-title a {
   color: #303030;
 }
+
+.post-title a:hover {
+  text-decoration:none;
+}
+.post-title a:hover,a:focus {
+  text-decoration:none;
+  color:#23527c;
+}
 .page-title,
 .post-title {
   margin-top: 0;
@@ -359,6 +366,95 @@ a.sidebar-nav-item:focus {
   color: inherit;
 }
 
+/* add tags support */
+.tags {
+  margin-bottom: -5px;
+}
+.tags a,
+.tags .tag {
+  background-color: #bebebe;
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 999em;
+  padding: 0 10px;
+  color: #ffffff;
+  line-height: 24px;
+  font-size: 12px;
+  text-decoration: none;
+  margin: 0 1px;
+  margin-bottom: 6px;
+}
+@media only screen and (min-width: 768px) {
+  .tags a,
+  .tags .tag {
+    margin-right: 5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #tag-heading {
+    padding: 50px 0;
+  }
+}
+#tag_cloud {
+  margin: 20px 0 15px 0;
+}
+#tag_cloud a,
+#tag_cloud .tag {
+  font-size: 14px;
+  border: none;
+  line-height: 28px;
+  margin: 0 2px;
+  margin-bottom: 8px;
+}
+#tag_cloud a:hover,
+#tag_cloud .tag:hover,
+#tag_cloud a:active,
+#tag_cloud .tag:active {
+  background-color: #515151;
+}
+@media only screen and (min-width: 768px) {
+  #tag_cloud {
+    margin-bottom: 25px;
+  }
+}
+.tag-comments {
+  font-size: 12px;
+}
+@media only screen and (min-width: 768px) {
+  .tag-comments {
+    font-size: 14px;
+  }
+}
+.one-tag-list:first-child {
+  margin-top: 0px;
+}
+.listing-seperator {
+  color: grey;
+  font-size: 17px ;
+}
+.listing-seperator::before {
+  margin-right: 5px;
+}
+@media only screen and (min-width: 768px) {
+  .listing-seperator {
+    font-size: 20px ;
+    line-height: 1.5 ;
+    margin-top: 5px;
+  }
+}
+.one-tag-list .post-preview a:hover{
+    color: #23527c;
+    text-decoration: none;
+}
+.post-preview > a {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 8px;
+    margin-top: 30px;
+}
+
+/* Tags support End*/
 
 /*
  * Pagination
